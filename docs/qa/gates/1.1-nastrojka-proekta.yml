@@ -1,0 +1,16 @@
+schema: 1
+story: '1.1'
+gate: ACCEPTED
+status_reason: 'Замечания QA были учтены. В историю добавлены критерии приемки и задачи для настройки ESLint, Prettier, pre-commit хуков и фиксации версии Node.js.'
+reviewer: 'Quinn'
+updated: '2025-10-07T12:05:00Z' # Дата обновления PO
+top_issues:
+  - id: 'OPS-002'
+    severity: high
+    finding: 'Отсутствие линтинга и автоматического форматирования кода.'
+    suggested_action: 'Добавить и настроить ESLint, Prettier, и pre-commit хуки (уже добавлено в историю).'
+  - id: 'OPS-001'
+    severity: medium
+    finding: 'Версия Node.js не зафиксирована, что может привести к проблемам с зависимостями.'
+    suggested_action: 'Создать .nvmrc и добавить поле engines в package.json (уже добавлено в историю).'
+waiver: { active: false }

@@ -1,0 +1,22 @@
+.display {
+  background-color: #1c1c1c; /* Более темный фон */
+  color: #ff4141; /* Ярко-красный цвет текста */
+  font-family: 'Digital-7', monospace; /* Семисегментный шрифт */
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; /* Эффект свечения */
+  font-size: 3rem; /* Немного увеличим шрифт */
+  padding: 10px;
+  text-align: right;
+  border: 2px solid #333;
+  border-radius: 5px;
+  overflow: hidden; /* Скрывать текст, который не помещается */
+  white-space: nowrap; /* Запретить перенос строки */
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.decimalPoint {
+  display: inline-block;
+  font-size: 0.8em; /* Делаем точку немного меньше */
+  margin-right: -0.1em; /* Подтягиваем следующую цифру чуть ближе */
+}

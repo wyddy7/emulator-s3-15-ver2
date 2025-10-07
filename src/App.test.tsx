@@ -2,8 +2,8 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders headline', () => {
+test('renders display component', () => {
   render(<App />);
-  const headline = screen.getByText(/Эмулятор калькулятора Электроника C3-15/i);
-  expect(headline).toBeInTheDocument();
+  const displayElement = screen.getByText(/0.00/i);
+  expect(displayElement).toBeInTheDocument();
 });

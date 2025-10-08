@@ -11,7 +11,7 @@ const Display: React.FC<DisplayProps> = ({ value }) => {
   const fractionalPart = parts.length > 1 ? parts[1] : null;
 
   return (
-    <div className={styles.display}>
+    <div className={styles.display} data-testid="display">
       {integerPart}
       {fractionalPart !== null && <span className={styles.decimalPoint}>.</span>}
       {fractionalPart}
